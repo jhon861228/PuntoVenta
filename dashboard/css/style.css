@@ -2,9 +2,10 @@
 /**public style**/
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 *{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   box-sizing: border-box;
 }
 
@@ -23,7 +24,10 @@ body{
   background: #fff;
 }
 main{
-  padding-top: 70px;
+  padding-top: 80px;
+}
+.navbar-brand img{
+  max-height: 40px;
 }
 .sidebar-fixed{
   height: calc(100vh - 70px);
@@ -33,6 +37,9 @@ main{
 .info-user{
   padding-bottom: 10px;
   padding-left: 5px;
+  border-bottom: 1px solid #ccc;
+  margin: auto;
+  width: 90%;
 }
 .sidebar-fixed .list-group-item{
   background: transparent;
@@ -78,7 +85,42 @@ main{
   padding: .15rem .3rem;
 }
 
-
+.container-login{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.container-login:after,.container-login:before{ 
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100vh;
+}
+.container-login:after{
+  width: calc(20% + 11rem);
+  background: #373a3c;
+  left: 0;
+}
+.container-login:before{
+  width: calc(80% - 11rem);
+  background: url('http://haliburg.com/wp-content/uploads/2014/12/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+}
+.card-login{
+  margin-left: 20%;
+  z-index: 1;
+}
+.img-logo-login{
+  display: block;
+  position: absolute;
+  width: 100px;
+  margin-left: 20%;
+  margin-top: 3%;
+  z-index: 1;
+}
 
 /*Estilo par checkbox y radios*/
 
